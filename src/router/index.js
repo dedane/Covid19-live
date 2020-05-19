@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import News from '../views/News.vue';
 import Test from '../views/test.vue';
 import Maps from '../views/maps.vue';
+import About from '../views/About.vue';
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/Maps',
     name: 'Maps',
     component: Maps,
+  },
+  {
+    path: '/About',
+    name: 'About',
+    component: About,
   },
 ];
 
