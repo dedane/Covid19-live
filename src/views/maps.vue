@@ -5,8 +5,12 @@
 </template>
 
 <script>
+import Header from '@/components/NavBar.vue';
 export default {
   name: 'maps',
+  components: {
+    Header,
+  },
 }
 </script>
 

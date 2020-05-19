@@ -1,12 +1,18 @@
 <template>
   <div id='home'>
+    <Header></Header>
   </div>
 </template>
 
 <script>
-export default {
+import Header from '@/components/NavBar.vue';
 
-}
+export default {
+  components: {
+    Header,
+  },
+
+};
 </script>
 
 <style>

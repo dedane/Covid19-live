@@ -1,11 +1,20 @@
 <template>
-  <h1>News</h1>
+  <div id='News'>
+    <Header></Header>
+  </div>
 </template>
 
 <script>
-export default {
+import Header from '@/components/NavBar.vue';
 
-}
+export default {
+  name: 'News',
+  components: {
+    Header,
+    
+  },
+
+};
 </script>
 
 <style>
