@@ -48,7 +48,7 @@
       </v-btn>
       </v-list-item>
       <v-list-item>
-      <v-btn class='text-center mx-4' 
+      <v-btn class='text-center mx-4'
       text
       @click="$router.push('/Test')"
       color='#FFFFFF'>

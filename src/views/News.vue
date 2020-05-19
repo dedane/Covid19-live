@@ -1,17 +1,20 @@
 <template>
   <div id='News'>
     <Header></Header>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from '@/components/NavBar.vue';
+import Footer from '@/components/Footer.vue'
 
 export default {
-  name: 'News',
+  name: News,
   components: {
     Header,
-    
+    Footer
+
   },
 
 };
