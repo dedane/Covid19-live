@@ -105,7 +105,7 @@
         <v-card-title class='text-center' ma-2>How To Stop It</v-card-title>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center'>
+      <v-row class='justify-center align-center ma-4' >
         <v-card color='#1a61a3' class='text-center' dark>
           <v-col>
           <v-img height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/facial-mask_G3rp6wEiGxd.svg'></v-img>
@@ -117,7 +117,7 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center'>
+      <v-row class='justify-center align-center ma-4'>
         <v-card color='#1a61a3' class='text-center' dark>
           <v-col>
           <v-img height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg'></v-img>
@@ -129,7 +129,7 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center'>
+      <v-row class='justify-center align-center ma-4'>
         <v-card color='#1a61a3' class='text-center' dark>
           <v-col>
           <v-img  height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/avoid-crowd_N6YAgJM-5qZ.svg'></v-img>
@@ -141,7 +141,7 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center'>
+      <v-row class='justify-center align-center ma-4'>
         <v-card color='#1a61a3' class='text-center' dark>
           <v-col>
           <v-img height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/social-distance_TZ_nX945z9f.svg'></v-img>
@@ -153,7 +153,7 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center'>
+      <v-row class='justify-center align-center ma-4'>
         <v-card color='#1a61a3' class='text-center' dark>
           <v-col>
           <v-img  height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/hand-cleaning_YBYOpnHpxo2.svg'></v-img>
