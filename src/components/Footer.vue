@@ -1,9 +1,14 @@
 <template>
 <v-footer
   dark
-  padless>
-  <v-container fluid>
+  padless
+  color="#252323">
       <v-row class='justify-center align-center'>
+          <v-card
+          flat
+          tile
+          color="#252323"
+          class="text-center">
           <v-col>
               <v-row>
                   <v-col>
@@ -32,13 +37,13 @@
                       text
                       v-for='icon in icons'
                       :key='icon'>
-                      <v-icon size='25px'>{{icon}}</v-icon>
+                      <v-icon size='20px'>{{icon}}</v-icon>
                       </v-btn>
                   </v-col>
               </v-row>
           </v-col>
+          </v-card>
       </v-row>
-  </v-container>
 </v-footer>
 </template>
 <script>
