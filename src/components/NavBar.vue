@@ -2,12 +2,12 @@
   <v-toolbar
     color='#FFFFFF'
     dark="">
-    <v-app-bar-nav-icon large class='grey--text hidden-md-and-up nav' @click="drawer =!drawer">
-    </v-app-bar-nav-icon>
     <v-btn text @click="$router.push('/')">
     <v-img src="https://ik.imagekit.io/ugyodiq15/Covid_bWHTIi_6h.png" max-width="100" max-height="100"></v-img>
     </v-btn>
     <v-spacer></v-spacer>
+     <v-app-bar-nav-icon large class='grey--text hidden-md-and-up nav' @click="drawer =!drawer">
+    </v-app-bar-nav-icon>
     <v-col justify-end class='hidden-sm-and-down'>
       <v-btn class='text-center mx-4'
         @click="$router.push('/')"
@@ -34,7 +34,7 @@
       About
       </v-btn>
     </v-col>
-  <v-navigation-drawer v-model='drawer' app class="nav" color='#9A2222 '>
+  <v-navigation-drawer app v-model='drawer' absolute temporary   class="nav" color='#9A2222 '>
       <v-list>
           <v-list-tile>
               <v-list-tile-content>
@@ -81,7 +81,8 @@
 
 <script>
 export default {
-    data(){
+name:'app',
+  data(){
         return {
             drawer: false,
         }
