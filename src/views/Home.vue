@@ -30,7 +30,7 @@
         <v-row>
           <v-col>
             <v-card flat>
-               <v-img src="https://ik.imagekit.io/ugyodiq15/virus-spread-in-world_upxyueLAmg7.svg"></v-img>
+          <v-img src="https://ik.imagekit.io/ugyodiq15/virus-spread-in-world_upxyueLAmg7.svg"></v-img>
             </v-card>
           </v-col>
           <v-col>
@@ -61,7 +61,7 @@
           <v-card-sub-title>
             Symptomatic symptoms
           </v-card-sub-title>
-          <v-img src='https://ik.imagekit.io/ugyodiq15/cough_No0M89PchPs.svg'></v-img>
+          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/cough_No0M89PchPs.svg'></v-img>
           <v-card-text >
             This means that you get
             infected by someone who has
@@ -76,7 +76,7 @@
           <v-card-sub-title>
             Pre-Symptomatic Symptoms
           </v-card-sub-title>
-          <v-img src='https://ik.imagekit.io/ugyodiq15/sick_5s39IwrhvaI.svg'></v-img>
+          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/sick_5s39IwrhvaI.svg'></v-img>
           <v-card-text>
             The pre-symptomatic period
             is the one of the hardest to
@@ -90,7 +90,7 @@
           <v-card-sub-title>
             Asymptoatic Symptoms
           </v-card-sub-title>
-          <v-img src='https://ik.imagekit.io/ugyodiq15/research-virus_TA0y8IKF3EX.svg'></v-img>
+          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/research-virus_TA0y8IKF3EX.svg'></v-img>
           <v-card-text>
             Asymptomatic individuals are infected people who
             essentially carry the virus but dont display any
