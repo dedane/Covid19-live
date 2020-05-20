@@ -1,6 +1,22 @@
 <template>
   <div id='home'>
     <Header></Header>
+    <v-content>
+      <v-col>
+        <v-row>
+          <v-col>
+          </v-col>
+          <v-col>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+          </v-col>
+          <v-col>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-content>
     <Footer></Footer>
   </div>
 </template>

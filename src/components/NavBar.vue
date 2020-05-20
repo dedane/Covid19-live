@@ -81,14 +81,13 @@
 
 <script>
 export default {
-name:'app',
-  data(){
-        return {
-            drawer: false,
-        }
-    }
+  data() {
+    return {
+      drawer: false,
+    };
+  },
 
-}
+};
 </script>
 
 <style>
