@@ -53,7 +53,7 @@
       </v-col>
       <v-row class='justify-center align-center'>
         <v-card class='text-center' flat>
-        <v-card-title class='text-center' ma-2>How covid Spreads</v-card-title>
+        <v-card-title class='text-center' ma-2>How Covid Spreads</v-card-title>
         </v-card>
       </v-row>
       <v-row class='justify-center align-center'>
@@ -98,6 +98,71 @@
             their bodies, its extremely rare and can only be recognized via
             lab test.
           </v-card-text>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card class='text-center' flat>
+        <v-card-title class='text-center' ma-2>How To Stop It</v-card-title>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card color='#1a61a3' class='text-center' dark>
+          <v-col>
+          <v-img src='https://ik.imagekit.io/ugyodiq15/facial-mask_G3rp6wEiGxd.svg'></v-img>
+          </v-col>
+          <v-col>
+          <v-card-sub-title>
+            Asymptoatic Symptoms
+          </v-card-sub-title>
+          </v-col>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card color='#1a61a3' class='text-center' dark>
+          <v-col>
+          <v-img src='https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg'></v-img>
+          </v-col>
+          <v-col>
+          <v-card-sub-title>
+            Stay Home
+          </v-card-sub-title>
+          </v-col>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card color='#1a61a3' class='text-center' dark>
+          <v-col>
+          <v-img src='https://ik.imagekit.io/ugyodiq15/avoid-crowd_N6YAgJM-5qZ.svg'></v-img>
+          </v-col>
+          <v-col>
+          <v-card-sub-title>
+            Avoid Crowds
+          </v-card-sub-title>
+          </v-col>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card color='#1a61a3' class='text-center' dark>
+          <v-col>
+          <v-img src='https://ik.imagekit.io/ugyodiq15/social-distance_TZ_nX945z9f.svg'></v-img>
+          </v-col>
+          <v-col>
+          <v-card-sub-title>
+            Social Distance
+          </v-card-sub-title>
+          </v-col>
+        </v-card>
+      </v-row>
+      <v-row class='justify-center align-center'>
+        <v-card color='#1a61a3' class='text-center' dark>
+          <v-col>
+          <v-img src='https://ik.imagekit.io/ugyodiq15/hand-cleaning_YBYOpnHpxo2.svg'></v-img>
+          </v-col>
+          <v-col>
+          <v-card-sub-title>
+            Wash Hands Oftenly
+          </v-card-sub-title>
+          </v-col>
         </v-card>
       </v-row>
     </v-content>
