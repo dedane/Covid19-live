@@ -1,7 +1,7 @@
 <template>
 <div id='maps'>
   <Header></Header>
-  <Footer
+  <Footer></Footer>
 </div>
 </template>
 
@@ -13,9 +13,9 @@ export default {
   name: 'maps',
   components: {
     Header,
-    Footer
+    Footer,
   },
-}
+};
 </script>
 
 <style>
