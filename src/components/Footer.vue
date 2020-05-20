@@ -48,14 +48,14 @@
 </template>
 <script>
 export default {
-    data: () => ({
-        icons: [
-            'mdi-facebook',
-            'mdi-twitter',
-            'mdi-github',
-        ]
-    })
-}
+  data: () => ({
+    icons: [
+      'mdi-facebook',
+      'mdi-twitter',
+      'mdi-github',
+    ],
+  }),
+};
 </script>
 <style>
 </style>
