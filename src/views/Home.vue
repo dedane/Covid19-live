@@ -51,54 +51,28 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-row class='justify-center align-center'>
-        <v-card class='text-center' flat>
-        <v-card-title class='text-center' ma-2>How Covid Spreads</v-card-title>
-        </v-card>
+      <v-row class='justify-center align-center' style='backgroundColor:#9a2222'>
+        <v-card-title color= '#ffffff' class='text-center' ma-2>How Covid Spreads</v-card-title>
       </v-row>
-      <v-row class='justify-center align-center'>
-        <v-card color='#9a2222' class='text-center' dark>
-          <v-card-sub-title>
-            Symptomatic symptoms
+      <v-row class='justify-center align-center'
+      style='backgroundColor:#9a2222'
+      v-for="spread in spreads"
+      :key="spread.img">
+      <v-col>
+        <v-card  class='text-center' color='#2D2C2C' dark text>
+          <div class='d-flex justify-space-between'>
+            <v-img height='300' width='300' size='200' class='ma-3' :src='spread.img'></v-img>
+          <div>
+          <v-card-sub-title
+          class='headline'
+          v-text='spread.title'>
           </v-card-sub-title>
-          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/cough_No0M89PchPs.svg'></v-img>
-          <v-card-text >
-            This means that you get
-            infected by someone who has
-            already contracted covid 19.
-            This will mostly be coughed
-            or sneezed droplets.
+          <v-card-text v-text='spread.text'>
           </v-card-text>
+          </div>
+          </div>
         </v-card>
-      </v-row>
-      <v-row class='justify-center align-center'>
-        <v-card color='#4e793f' class='text-center' dark>
-          <v-card-sub-title>
-            Pre-Symptomatic Symptoms
-          </v-card-sub-title>
-          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/sick_5s39IwrhvaI.svg'></v-img>
-          <v-card-text>
-            The pre-symptomatic period
-            is the one of the hardest to
-            recognise. one has to await the incubation days
-            for them to confirm from the lab whether they are infected or not
-          </v-card-text>
-        </v-card>
-      </v-row>
-      <v-row class='justify-center align-center'>
-        <v-card color='#1a61a3' class='text-center' dark>
-          <v-card-sub-title>
-            Asymptoatic Symptoms
-          </v-card-sub-title>
-          <v-img height='500' width='500' src='https://ik.imagekit.io/ugyodiq15/research-virus_TA0y8IKF3EX.svg'></v-img>
-          <v-card-text>
-            Asymptomatic individuals are infected people who
-            essentially carry the virus but dont display any
-            inherent symptoms since the disease remains dormant in
-            their bodies, its extremely rare and can only be recognized via
-            lab test.
-          </v-card-text>
-        </v-card>
+      </v-col>
       </v-row>
       <v-row class='justify-center align-center'>
         <v-card class='text-center' flat>
@@ -179,6 +153,23 @@ export default {
     Header,
     Footer,
   },
+  data: () => ({
+    spreads: [
+      {title: 'Symptomatic symptoms',img: 'https://ik.imagekit.io/ugyodiq15/cough_No0M89PchPs.svg', 
+      text: 'This means that you get infected by someone who has already contracted covid 19. This will mostly be coughed or sneezed droplets.'},
+      {title: 'Pre-Symptomatic Symptoms',img: 'https://ik.imagekit.io/ugyodiq15/sick_5s39IwrhvaI.svg',
+      text: 'The pre-symptomatic period is the one of the hardest to recognise. one has to await the incubation days for them to confirm from the lab whether they are infected or not'},
+      {title: 'Asymptoatic Symptoms',img: 'https://ik.imagekit.io/ugyodiq15/research-virus_TA0y8IKF3EX.svg',
+      text: 'Asymptomatic individuals are infected people who essentially carry the virus but dont display any inherent symptoms since the disease remains dormant in their bodies, its extremely rare and can only be recognized via lab test.'},
+    ],
+    avoid: [
+      {img: 'https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg',text: 'Wear masks'},
+      {img: 'https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg',text: 'Stay Home'},
+      {img: 'https://ik.imagekit.io/ugyodiq15/avoid-crowd_N6YAgJM-5qZ.svg',text: 'Avoid Crowds'},
+      {img: 'https://ik.imagekit.io/ugyodiq15/social-distance_TZ_nX945z9f.svg',text: 'Social Distance'},
+      {img: 'https://ik.imagekit.io/ugyodiq15/hand-cleaning_YBYOpnHpxo2.svg',text: 'Wash Hands Oftenly'},
+    ]
+  })
 
 };
 </script>
