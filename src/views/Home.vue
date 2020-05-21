@@ -79,18 +79,16 @@
         <v-card-title class='text-center' ma-2>How To Stop It</v-card-title>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center ma-4'
+      <v-row class='justify-center align-center ma-4'>
+      <v-col
       v-for='avoid in avoids'
       :key='avoid.img'>
         <v-card color='#1a61a3' class='text-center' dark>
-          <v-col>
-          <v-img height='200' width='200' :src='avoid.img'></v-img>
-          </v-col>
-          <v-col>
+          <v-img height='300' width='300' :src='avoid.img'></v-img>
           <v-card-sub-title v-text='avoid.text'>
           </v-card-sub-title>
-          </v-col>
         </v-card>
+      </v-col>
       </v-row>
     </v-content>
     <Footer></Footer>
@@ -116,7 +114,7 @@ export default {
       text: 'Asymptomatic individuals are infected people who essentially carry the virus but dont display any inherent symptoms since the disease remains dormant in their bodies, its extremely rare and can only be recognized via lab test.'},
     ],
     avoids: [
-      {img: 'https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg',text: 'Wear masks'},
+      {img: 'https://ik.imagekit.io/ugyodiq15/facial-mask_G3rp6wEiGxd.svg',text: 'Wear masks'},
       {img: 'https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg',text: 'Stay Home'},
       {img: 'https://ik.imagekit.io/ugyodiq15/avoid-crowd_N6YAgJM-5qZ.svg',text: 'Avoid Crowds'},
       {img: 'https://ik.imagekit.io/ugyodiq15/social-distance_TZ_nX945z9f.svg',text: 'Social Distance'},
