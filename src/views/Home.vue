@@ -91,54 +91,6 @@
           </v-col>
         </v-card>
       </v-row>
-      <v-row class='justify-center align-center ma-4'>
-        <v-card color='#1a61a3' class='text-center' dark>
-          <v-col>
-          <v-img height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/stay-home_1M2cOY2NAkK.svg'></v-img>
-          </v-col>
-          <v-col>
-          <v-card-sub-title>
-            Stay Home
-          </v-card-sub-title>
-          </v-col>
-        </v-card>
-      </v-row>
-      <v-row class='justify-center align-center ma-4'>
-        <v-card color='#1a61a3' class='text-center' dark>
-          <v-col>
-          <v-img  height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/avoid-crowd_N6YAgJM-5qZ.svg'></v-img>
-          </v-col>
-          <v-col>
-          <v-card-sub-title>
-            Avoid Crowds
-          </v-card-sub-title>
-          </v-col>
-        </v-card>
-      </v-row>
-      <v-row class='justify-center align-center ma-4'>
-        <v-card color='#1a61a3' class='text-center' dark>
-          <v-col>
-          <v-img height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/social-distance_TZ_nX945z9f.svg'></v-img>
-          </v-col>
-          <v-col>
-          <v-card-sub-title>
-            Social Distance
-          </v-card-sub-title>
-          </v-col>
-        </v-card>
-      </v-row>
-      <v-row class='justify-center align-center ma-4'>
-        <v-card color='#1a61a3' class='text-center' dark>
-          <v-col>
-          <v-img  height='200' width='200' src='https://ik.imagekit.io/ugyodiq15/hand-cleaning_YBYOpnHpxo2.svg'></v-img>
-          </v-col>
-          <v-col>
-          <v-card-sub-title>
-            Wash Hands Oftenly
-          </v-card-sub-title>
-          </v-col>
-        </v-card>
-      </v-row>
     </v-content>
     <Footer></Footer>
   </div>
