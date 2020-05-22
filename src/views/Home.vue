@@ -92,8 +92,14 @@
         </v-card>
       </v-col>
       </v-row>
-       <MglMap id='map' :accessToken="accessToken" :mapStyle="mapStyle" latitude="37.9062"
-                    longitude="0.0236"/>
+      <v-card
+      ma-6
+      flat
+      height='300px'
+      >
+       <MglMap  id='map':accessToken="accessToken" :mapStyle="mapStyle"
+       cordinates='cordinates'/>
+      </v-card>
     </v-content>
     <Footer></Footer>
   </div>
@@ -113,7 +119,8 @@ export default {
   },
   data: () => ({
     accessToken: 'pk.eyJ1IjoiZXZhbnM2NjYiLCJhIjoiY2thaDllZno5MGUzYjJxdDllMmdhYjVoYiJ9.3oJSZ6QiZe3t0kugy69hmw',
-    mapStyle: 'mapbox://styles/mapbox/dark-v10',
+    mapStyle: 'mapbox://styles/mapbox/outdoors-v11',
+    cordinates: ['0.0236,37.9062'],
     spreads: [
       {
         title: 'Symptomatic symptoms',
@@ -148,7 +155,6 @@ export default {
 
 <style>
 #map {
-  width: 100vw;
-  height: 100vh;
+  height: 50vh;
 }
 </style>
