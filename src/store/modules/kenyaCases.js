@@ -1,41 +1,37 @@
 import axios from 'axios'
 
 const state={
-    countryStat: null,
-    loaded: false,
+    cases: [],
+    loaded: false
 }
-
 const getters={
-    countryStat: state => state.countryStat,
-    loaded: state => state.loaded,
+    cases: state => state.cases,
+    loaded: state => state.loaded
 }
 const mutations={
-    setCountryStat(state, payload){
-        state.countryStat = payload
-    },
+    setCases(state, payload){
+        state.cases = payload
+    }
 }
 const actions={
-    getCountryStat(vuexContext, countryName){
+    getKenyaCases(vuexcontext){
         axios({
             "method":"GET",
-            "url": "https://covid-193.p.rapidapi.com/countries",
+            "url": "https://covid-193.p.rapidapi.com/statistics",
             "headers":{
                 "x-rapidapi-host":"covid-193.p.rapidapi.com",
                 "x-rapidapi-key":"108791afbdmshde20c2a12045146p114b76jsnf965acd10bd9",
                 "useQueryString": true
             },"params":{
-                "country": countryName
+                "country":"kenya"
             }
         })
         .then(response => {
-            vuexcontext.commit('setCountryStat',response.data.latest_stat_by_country[0])
+            vuexcontext.commit('setCases',response.data.latest_stat_by_country[0])
+            vuexcontext.state.loaded = true
         })
-    },
-    removeStat(vuexContext){
-        vuexContext.state.countryStat = null
     }
 }
-
 export default{
     namespaced: true,
     state, getters, mutations, actions

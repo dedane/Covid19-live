@@ -118,6 +118,11 @@ export default {
     MglMap,
   },
   data: () => ({
+    computed: {
+      kenyaCases(){
+        return this.$store.getters['kenyaCases/cases']
+      }
+    },
     accessToken: 'pk.eyJ1IjoiZXZhbnM2NjYiLCJhIjoiY2thaDllZno5MGUzYjJxdDllMmdhYjVoYiJ9.3oJSZ6QiZe3t0kugy69hmw',
     mapStyle: 'mapbox://styles/mapbox/outdoors-v11',
     cordinates: ['0.0236,37.9062'],
