@@ -15,19 +15,16 @@ const mutations={
     },
 }
 const actions={
-    getCountryStat(vuexContext){
+    getCountryStat(vuexContext, countryName){
         axios({
             "method":"GET",
-            "url": "https://covid-193.p.rapidapi.com/statistics",
-            "query"({
-                "country":"KENYA"
-            })
+            "url": "https://covid-193.p.rapidapi.com/countries",
             "headers":{
                 "x-rapidapi-host":"covid-193.p.rapidapi.com",
                 "x-rapidapi-key":"108791afbdmshde20c2a12045146p114b76jsnf965acd10bd9",
                 "useQueryString": true
             },"params":{
-                "country": "KENYA"
+                "country": countryName
             }
         })
         .then(response => {
