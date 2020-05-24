@@ -97,9 +97,14 @@
       flat
       height='300px'
       >
-       <MglMap  id='map':accessToken="accessToken" :mapStyle="mapStyle"
-       cordinates='cordinates'/>
+       <MglMap class='ma-5'  :accessToken="accessToken" :mapStyle="mapStyle"
+       :center="coordinates" :zoom="zoom">
+       <MglMarker :coordinates="coordinates" >
+         <v-icon slot="marker">mdi-map-marker</v-icon>
+       </MglMarker>
+       </MglMap>
       </v-card>
+      <kenyanCases></kenyanCases>
     </v-content>
     <Footer></Footer>
   </div>
@@ -107,25 +112,30 @@
 
 <script>
 import Mapbox from 'mapbox-gl';
-import { MglMap } from 'vue-mapbox';
+import { MglMap, MglMarker } from 'vue-mapbox';
 import Header from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
+import kenyanCases from '@/components/kenyanCases.vue';
 
 export default {
   components: {
     Header,
     Footer,
     MglMap,
+    MglMarker,
+    kenyanCases,
   },
   data: () => ({
     computed: {
-      kenyaCases(){
-        return this.$store.getters['kenyaCases/cases']
-      }
+      kenyaCases () {
+        return this.$store.getters [ 'kenyaCases/cases' ];
+      },
     },
     accessToken: 'pk.eyJ1IjoiZXZhbnM2NjYiLCJhIjoiY2thaDllZno5MGUzYjJxdDllMmdhYjVoYiJ9.3oJSZ6QiZe3t0kugy69hmw',
     mapStyle: 'mapbox://styles/mapbox/outdoors-v11',
-    cordinates: ['0.0236,37.9062'],
+    coordinates: [36.820231,-1.316538],
+    /* marker: [ location.coordinates[0],location.coordinates[1] ], */
+     zoom: 7, 
     spreads: [
       {
         title: 'Symptomatic symptoms',
@@ -153,8 +163,27 @@ export default {
   }),
   created() {
     this.mapbox = Mapbox;
+    /* fetch('https://covid-193.p.rapidapi.com/statistics?country=KENYA',{
+    'method':'GET',
+          "headers":{
+                "x-rapidapi-host":"covid-193.p.rapidapi.com",
+                "x-rapidapi-key":"108791afbdmshde20c2a12045146p114b76jsnf965acd10bd9",
+          }
+        }) */
+        fetch("https://kenyacovid19.api.ushahidi.io/api/v3/posts/geojson?has_location=mapped&limit=200&offset=200&order=desc&order_unlocked_on_top=true&orderby=created&source%5B%5D=sms&source%5B%5D=twitter&source%5B%5D=web&source%5B%5D=email&status%5B%5D=published&status%5B%5D=draft").then(response => response.json())
+        .then(data => { 
+        const features = data.features
+          features.forEach(features => {
+            const geometrics = features.geometry.geometries
+            console.log(geometrics)
+            const location = geometrics.find(coordinate => coordinate === geometrics.coordinates)
+            console.log(geometrics)
+          }) }) 
+           .catch(err => {
+          console.log(err);
+      })
   },
-
+        
 };
 </script>
 
