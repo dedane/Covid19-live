@@ -4,7 +4,7 @@
     <v-content>
       <v-col>
         <v-row>
-          <v-col>
+          <v-col xs-6>
             <v-card flat>
               <v-card-title color="#9a2222">
                 COVID-19 Alert
@@ -21,7 +21,7 @@
               </v-card-actions>
             </v-card>
           </v-col>
-          <v-col>
+          <v-col xs-6>
            <!--  <v-card flat> -->
                <v-img src="https://ik.imagekit.io/ugyodiq15/keep-social-distance-2347821-1_LIKCr0Cc1qn.svg"></v-img>
             <!-- </v-card> -->
@@ -127,15 +127,15 @@ export default {
   },
   data: () => ({
     computed: {
-      kenyaCases () {
-        return this.$store.getters [ 'kenyaCases/cases' ];
+      kenyaCases() {
+        return this.$store.getters['kenyaCases/cases'];
       },
     },
     accessToken: 'pk.eyJ1IjoiZXZhbnM2NjYiLCJhIjoiY2thaDllZno5MGUzYjJxdDllMmdhYjVoYiJ9.3oJSZ6QiZe3t0kugy69hmw',
     mapStyle: 'mapbox://styles/mapbox/outdoors-v11',
-    coordinates: [36.820231,-1.316538],
+    coordinates: [36.820231, -1.316538],
     /* marker: [ location.coordinates[0],location.coordinates[1] ], */
-     zoom: 7, 
+    zoom: 7,
     spreads: [
       {
         title: 'Symptomatic symptoms',
@@ -170,20 +170,25 @@ export default {
                 "x-rapidapi-key":"108791afbdmshde20c2a12045146p114b76jsnf965acd10bd9",
           }
         }) */
-        fetch("https://kenyacovid19.api.ushahidi.io/api/v3/posts/geojson?has_location=mapped&limit=200&offset=200&order=desc&order_unlocked_on_top=true&orderby=created&source%5B%5D=sms&source%5B%5D=twitter&source%5B%5D=web&source%5B%5D=email&status%5B%5D=published&status%5B%5D=draft").then(response => response.json())
-        .then(data => { 
-        const features = data.features
-          features.forEach(features => {
-            const geometrics = features.geometry.geometries
-            console.log(geometrics)
-            const location = geometrics.find(coordinate => coordinate === geometrics.coordinates)
-            console.log(geometrics)
-          }) }) 
-           .catch(err => {
-          console.log(err);
+    fetch('https://kenyacovid19.api.ushahidi.io/api/v3/posts/geojson?has_location=mapped&limit=200&offset=200&order=desc&order_unlocked_on_top=true&orderby=created&source%5B%5D=sms&source%5B%5D=twitter&source%5B%5D=web&source%5B%5D=email&status%5B%5D=published&status%5B%5D=draft').then((response) => response.json())
+      .then((data) => {
+        const { features } = data;
+        // eslint-disable-next-line no-shadow
+        features.forEach((features) => {
+          const geometrics = features.geometry.geometries;
+          // eslint-disable-next-line no-console
+          console.log(geometrics);
+          // eslint-disable-next-line no-unused-vars
+          const location = geometrics.find((coordinate) => coordinate === geometrics.coordinates);
+          // eslint-disable-next-line no-console
+          console.log(geometrics);
+        });
       })
+      .catch((err) => {
+        // eslint-disable-next-line no-console
+        console.log(err);
+      });
   },
-        
 };
 </script>
 
