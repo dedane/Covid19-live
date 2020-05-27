@@ -53,8 +53,8 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-row class='justify-center align-center' style='backgroundColor:#9a2222'>
-        <v-card-title color= '#ffffff' class='text-center' ma-2>How Covid Spreads</v-card-title>
+      <v-row dark class='justify-center align-center' style='backgroundColor:#9a2222'>
+        <v-card-title dark color= '#ffffff' class='text-center' ma-2>How Covid Spreads</v-card-title>
       </v-row>
       <v-row class='justify-center align-center'
       style='backgroundColor:#9a2222'
