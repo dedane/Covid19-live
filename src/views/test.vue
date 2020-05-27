@@ -38,9 +38,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Kit_xMM2SPYyQ.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -69,9 +73,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Patient_uCze1AeW5.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -100,9 +108,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/International_Travel_2lvQF2gFe.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -131,9 +143,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/hard_breathing_6p8nHx3Oyg.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -162,9 +178,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/blood_cyvPoXCIE.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -193,9 +213,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Throat_XjCOmc7PK.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -224,9 +248,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Back_Body_kyFaEAlek.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -255,9 +283,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Headache_DoZs4XyNwa.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -286,9 +318,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Fever_c6wH1fATz.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -317,9 +353,13 @@
             </v-row>
             <v-row align="center"
             justify="center" height='300' width='300'>
+            <v-col>
+            </v-col>
             <v-col xs12 md6>
             <v-img height='300' width='300' src='https://ik.imagekit.io/ugyodiq15/Fatigue_tNPWiVV0-.svg'></v-img>
             </v-img>
+            </v-col>
+            <v-col>
             </v-col>
             </v-row>
             <v-row align="center"
@@ -357,70 +397,69 @@ export default {
       el: 1,
       step: [1,2,3,4,5,6,7,8,9,10],
       tests: [
-      {
-        step: 1,
-        title: 'Have you experinced the following symptoms?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Kit_xMM2SPYyQ.svg',
-        symptoms: 'Fever, Cough, Sneezing, Sore Throat, Difficulty breathing'
-      },
-      {
-        step: 2,
-        title: 'Have you been in any physical contact with an infected individual?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Patient_uCze1AeW5.svg',
-        symptoms: 'face to face or in the same room'
-      },
-      {
-        step: 3,
-        title: 'Have you recently travelled to a highly infectious location',
-        src: 'https://ik.imagekit.io/ugyodiq15/International_Travel_2lvQF2gFe.svg',
-        symptoms: 'Nairobi, Mombasa, Nyali'
-      },
-      {
-        step: 4,
-        title: 'Do you have a problem breathing?',
-        src: 'https://ik.imagekit.io/ugyodiq15/hard_breathing_6p8nHx3Oyg.svg',
-        symptoms: 'Shortness of breath, wheezing'
-      },
-      {
-        step: 5,
-        title: 'Do you experience blood droplets when you urinate?',
-        src: 'https://ik.imagekit.io/ugyodiq15/blood_cyvPoXCIE.svg',
-        symptoms: 'Any traces of blood in urine'
-      },
-      {
-        step: 6,
-        title: 'Do you have a continuos sore throat?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Throat_XjCOmc7PK.svg',
-        symptoms: 'dry or with mucus'
-      },
-      {
-        step: 7,
-        title: 'Do you experience any body-aches',
-        src: 'https://ik.imagekit.io/ugyodiq15/Back_Body_kyFaEAlek.svg',
-        symptoms: 'when you wake up or after some physical activity'
-      },
-      {
-        step: 8,
-        title: 'Do you have a have consistent headache?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Headache_DoZs4XyNwa.svg',
-        symptoms: 'with fever or coincides with diziness'
-      },
-      {
-        step: 9,
-        title: 'Do you have a fever?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Fever_c6wH1fATz.svg',
-        symptoms: 'when tested 38.8 C and above'
-      },
-      {
-        step: 10,
-        title: 'Are you experiencing fatigue?',
-        src: 'https://ik.imagekit.io/ugyodiq15/Fatigue_tNPWiVV0-.svg',
-        symptoms: 'always tired and feel like you cant do anything'
-      }
-    ]
-    }
+        {
+          step: 1,
+          title: 'Have you experinced the following symptoms?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Kit_xMM2SPYyQ.svg',
+          symptoms: 'Fever, Cough, Sneezing, Sore Throat, Difficulty breathing',
+        },
+        {
+          step: 2,
+          title: 'Have you been in any physical contact with an infected individual?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Patient_uCze1AeW5.svg',
+          symptoms: 'face to face or in the same room',
+        },
+        {
+          step: 3,
+          title: 'Have you recently travelled to a highly infectious location',
+          src: 'https://ik.imagekit.io/ugyodiq15/International_Travel_2lvQF2gFe.svg',
+          symptoms: 'Nairobi, Mombasa, Nyali',
+        },
+        {
+          step: 4,
+          title: 'Do you have a problem breathing?',
+          src: 'https://ik.imagekit.io/ugyodiq15/hard_breathing_6p8nHx3Oyg.svg',
+          symptoms: 'Shortness of breath, wheezing',
+        },
+        {
+          step: 5,
+          title: 'Do you experience blood droplets when you urinate?',
+          src: 'https://ik.imagekit.io/ugyodiq15/blood_cyvPoXCIE.svg',
+          symptoms: 'Any traces of blood in urine',
+        },
+        {
+          step: 6,
+          title: 'Do you have a continuos sore throat?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Throat_XjCOmc7PK.svg',
+          symptoms: 'dry or with mucus',
+        },
+        {
+          step: 7,
+          title: 'Do you experience any body-aches',
+          src: 'https://ik.imagekit.io/ugyodiq15/Back_Body_kyFaEAlek.svg',
+          symptoms: 'when you wake up or after some physical activity',
+        },
+        {
+          step: 8,
+          title: 'Do you have a have consistent headache?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Headache_DoZs4XyNwa.svg',
+          symptoms: 'with fever or coincides with diziness',
+        },
+        {
+          step: 9,
+          title: 'Do you have a fever?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Fever_c6wH1fATz.svg',
+          symptoms: 'when tested 38.8 C and above',
+        },
+        {
+          step: 10,
+          title: 'Are you experiencing fatigue?',
+          src: 'https://ik.imagekit.io/ugyodiq15/Fatigue_tNPWiVV0-.svg',
+          symptoms: 'always tired and feel like you cant do anything',
+        },
+      ],
+    };
   },
-
 };
 </script>
 
