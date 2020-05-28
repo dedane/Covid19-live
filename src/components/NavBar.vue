@@ -28,6 +28,12 @@
         News
       </v-btn>
       <v-btn class='text-center mx-4'
+      @click="$router.push('/maps.vue')"
+      text
+      color='#9A2222'>
+        Maps
+      </v-btn>
+      <v-btn class='text-center mx-4'
       @click="$router.push('/About')"
       text
       color='#9A2222'>
@@ -61,6 +67,14 @@
       @click="$router.push('/News')"
       color='#FFFFFF'>
         News
+      </v-btn>
+      </v-list-item>
+      <v-list-item>
+       <v-btn class='text-center mx-4'
+      @click="$router.push('/maps.vue')"
+      text
+      color='#9A2222'>
+        Maps
       </v-btn>
       </v-list-item>
       <v-list-item>
