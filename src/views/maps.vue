@@ -8,7 +8,7 @@
       flat
       height='400px'
       >
-        <MglMap   :accessToken="accessToken" :mapStyle="mapStyle" zoom='1'>
+        <MglMap   :accessToken="accessToken" :mapStyle="mapStyle" zoom='1.5'>
        <MglMarker >
          <v-icon slot="marker">mdi-map-marker</v-icon>
        </MglMarker>
@@ -33,12 +33,33 @@ export default {
     Header,
     Footer,
     MglMap,
-    MglMarker
+    MglMarker,
   },
   data: () => ({
     accessToken: 'pk.eyJ1IjoiZXZhbnM2NjYiLCJhIjoiY2thaDllZno5MGUzYjJxdDllMmdhYjVoYiJ9.3oJSZ6QiZe3t0kugy69hmw',
-    mapStyle: 'mapbox://styles/mapbox/dark-v10'
-  })
+    mapStyle: 'mapbox://styles/mapbox/dark-v10',
+  }),
+  created() {
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+    };
+
+    fetch('https://api.covid19api.com/all', requestOptions)
+      .then((response) => response.json())
+      // eslint-disable-next-line no-shadow
+      .then((data) => data
+        .filter(data => {
+          return data.Date='2020-05-27T00:00:00Z';
+        })
+        .forEach((data) => {
+        // eslint-disable-next-line no-console
+          console.log(data.country);
+        }),
+      // .catch((error) => console.log('error', error))
+      // eslint-disable-next-line function-paren-newline
+      );
+  },
 };
 </script>
 

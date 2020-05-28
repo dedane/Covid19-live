@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-Vue.use(Vuex);
-
 import kenyaCases from './modules/kenyaCases'
 import countries from './modules/countries'
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -14,6 +14,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    kenyaCases,countries
+    kenyaCases, countries
   },
 });

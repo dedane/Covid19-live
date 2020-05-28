@@ -11,7 +11,7 @@
       </v-content>
     </v-container>
     <v-container fluid>
-      <newsContent :articles="articles"></newsContent> 
+      <newsContent :articles="articles"></newsContent>
     </v-container>
     <Footer></Footer>
   </div>
@@ -33,19 +33,21 @@ export default {
     return {
       api_key: 'dfbf66c2e49e413f815493216fa86501',
       articles: [],
-      errors: []
-    }
+      errors: [],
+    };
   },
   created() {
-    axios.get ('https://newsapi.org/v2/everything?q=coronavirus-kenya&apikey='+this.api_key)
-    .then(response => {
-      this.articles = response.data.articles
-      console.log('data:')
-      console.log(response.data.articles)
-})  
-    .catch(e => {
-      this.errors.push(e)
-    })
+    axios.get(`https://newsapi.org/v2/everything?q=coronavirus-kenya&apikey=${this.api_key}`)
+      .then((response) => {
+        this.articles = response.data.articles;
+        // eslint-disable-next-line no-console
+        console.log('data:');
+        // eslint-disable-next-line no-console
+        console.log(response.data.articles);
+      })
+      .catch((e) => {
+        this.errors.push(e);
+      });
   },
 
 };

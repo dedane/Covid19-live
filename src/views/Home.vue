@@ -2,14 +2,16 @@
   <div id='home'>
     <Header></Header>
     <v-content>
-      <v-col>
+      <v-container>
         <v-row>
           <v-col xs-6>
-            <v-card flat>
+            <v-card
+            flat
+            class='mx-auto'>
               <v-card-title color="#9a2222">
                 COVID-19 Alert
               </v-card-title>
-              <v-card-text>
+              <v-card-text class='headline font-weight-bold '>
                 Covid-19 might as well be the biggest menace the world has
                 had since the bubonic flu. with no specific medicine to prevent
                 or treat Coronavirus Disease.
@@ -23,14 +25,16 @@
           </v-col>
           <v-col xs-6>
            <!--  <v-card flat> -->
-               <v-img src="https://ik.imagekit.io/ugyodiq15/keep-social-distance-2347821-1_LIKCr0Cc1qn.svg"></v-img>
+               <v-img height='400' width='400'src="https://ik.imagekit.io/ugyodiq15/keep-social-distance-2347821-1_LIKCr0Cc1qn.svg"></v-img>
             <!-- </v-card> -->
           </v-col>
         </v-row>
+        </v-container>
+        <v-container>
         <v-row>
           <v-col>
-            <v-card flat>
-          <v-img src="https://ik.imagekit.io/ugyodiq15/virus-spread-in-world_upxyueLAmg7.svg"></v-img>
+            <v-card flat class='mx-auto'>
+          <v-img height='400' width='400' src="https://ik.imagekit.io/ugyodiq15/virus-spread-in-world_upxyueLAmg7.svg"></v-img>
             </v-card>
           </v-col>
           <v-col>
@@ -38,7 +42,7 @@
               <v-card-title color="#9a2222">
                 What is Covid19
               </v-card-title>
-              <v-card-text>
+              <v-card-text class='headline font-weight-bold'>
                 Corona Viruses are A type of Virus.
                 There are many different kinds.A newly identified type
                 originally from wuhan china has caused a recent outbreak
@@ -52,30 +56,42 @@
             </v-card>
           </v-col>
         </v-row>
+        </v-container>
       </v-col>
-      <v-row dark class='justify-center align-center' style='backgroundColor:#9a2222'>
-        <v-card-title dark color= '#ffffff' class='text-center' ma-2>How Covid Spreads</v-card-title>
+      <v-row dark class='justify-center align-center'>
+        <v-card-title
+        class='text-center display-4'
+        color="#9a2222"
+        ma-2>
+        How Covid Spreads
+      </v-card-title>
       </v-row>
+      <v-container >
       <v-row class='justify-center align-center'
-      style='backgroundColor:#9a2222'
       v-for="spread in spreads"
       :key="spread.img">
-      <v-col>
-        <v-card  class='text-center' color='#2D2C2C' dark text>
-          <div class='d-flex justify-space-between'>
+      <v-col xs-12>
+        <v-card  class='text-center' color="#9a2222" dark text>
+          <v-col>
             <v-img height='300' width='300' size='200' class='ma-3' :src='spread.img'></v-img>
-          <div>
+          </v-col>
+          <v-col>
           <v-card-sub-title
-          class='headline'
+          class='headline mt-6'
           v-text='spread.title'>
           </v-card-sub-title>
-          <v-card-text v-text='spread.text'>
+          <v-card-text
+          class='headline font-weight-bold mt-10'
+          v-text='spread.text'>
           </v-card-text>
-          </div>
-          </div>
+          </v-col>
+          <!-- </div>
+          </div> -->
         </v-card>
       </v-col>
       </v-row>
+      </v-container>
+      <v-container>
       <v-row class='justify-center align-center'>
         <v-card class='text-center' flat>
         <v-card-title class='text-center' ma-2>How To Stop It</v-card-title>
@@ -92,6 +108,7 @@
         </v-card>
       </v-col>
       </v-row>
+      </v-container>
       <v-container>
         <v-row>
           <v-col>

@@ -15,7 +15,6 @@
                       </v-flex>
                     </v-layout>
                   </v-container>
-                </v-card-media>
                 <v-card-text>
                   {{ article.description }}
                 </v-card-text>
@@ -23,7 +22,6 @@
                   <v-chip ma-2 color="secondary" class="white--text">
                     {{article.source.name}}
                   </v-chip>
-                  
                   <!-- <v-btn icon class="red--text">
                     <v-icon small>fa-reddit</v-icon>
                   </v-btn>
@@ -40,8 +38,8 @@
                     <v-icon small>fa-linkedin</v-icon>
                   </v-btn>-->
                   <v-spacer></v-spacer>
- 
-         <v-btn small replace color="info" v-bind:href="article.url" target="_blank" >Read More</v-btn>
+         <v-btn small replace color="info"
+         v-bind:href="article.url" target="_blank" >Read More</v-btn>
                 </v-card-actions>
               </v-card>
             </div>
@@ -53,7 +51,7 @@
 <script>
 export default {
   props: {
-      articles: Array
+    articles: Array,
   },
-}
+};
 </script>
