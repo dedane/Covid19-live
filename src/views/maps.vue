@@ -1,15 +1,19 @@
 <template>
 <div id='maps'>
   <Header></Header>
-  <v-container>
+  <v-container fill-height>
     <v-row>
       <v-col>
-        <MglMap class='ma-5'  :accessToken="accessToken" :mapStyle="mapStyle"
-       :center="coordinates" :zoom="zoom">
+        <v-card
+      flat
+      height='400px'
+      >
+        <MglMap   :accessToken="accessToken" :mapStyle="mapStyle" zoom='1'>
        <MglMarker >
          <v-icon slot="marker">mdi-map-marker</v-icon>
        </MglMarker>
        </MglMap>
+       </v-card>
       </v-col>
     </v-row>
   </v-container>
