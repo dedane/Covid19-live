@@ -31,13 +31,13 @@ export default {
   },
   data() {
     return {
-      apikey: 'dfbf66c2e49e413f815493216fa86501',
+      api_key: 'dfbf66c2e49e413f815493216fa86501',
       articles: [],
       errors: []
     }
   },
   created() {
-    axios.get ('https://newsapi.org/v2/everything?q=coronavirus-kenya&apikey='+this.apikey)
+    axios.get ('https://newsapi.org/v2/everything?q=coronavirus-kenya&apikey='+this.api_key)
     .then(response => {
       this.articles = response.data.articles
       console.log('data:')

@@ -1,6 +1,7 @@
 <template>
-    <v-layout row wrap align-center>
-          <v-flex xs8  offset-md2>
+  <v-container>
+    <v-row align="center">
+          <v-col xs12 >
             <div v-for="article in articles" :key="article.title">
               <v-card class="my-3" hover>
                 <v-img
@@ -19,11 +20,11 @@
                   {{ article.description }}
                 </v-card-text>
                 <v-card-actions>
-                  <v-chip small color="secondary" class="white--text">
+                  <v-chip ma-2 color="secondary" class="white--text">
                     {{article.source.name}}
                   </v-chip>
-                  <v-spacer></v-spacer>
-                  <v-btn icon class="red--text">
+                  
+                  <!-- <v-btn icon class="red--text">
                     <v-icon small>fa-reddit</v-icon>
                   </v-btn>
                   <v-btn icon class="light-blue--text">
@@ -37,15 +38,16 @@
                   </v-btn>
                   <v-btn icon class="blue--text text--darken-4">
                     <v-icon small>fa-linkedin</v-icon>
-                  </v-btn>
+                  </v-btn>-->
                   <v-spacer></v-spacer>
-
+ 
          <v-btn small replace color="info" v-bind:href="article.url" target="_blank" >Read More</v-btn>
                 </v-card-actions>
               </v-card>
             </div>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>

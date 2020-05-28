@@ -92,6 +92,9 @@
         </v-card>
       </v-col>
       </v-row>
+      <v-container>
+        <v-row>
+          <v-col>
       <v-card
       ma-6
       flat
@@ -104,6 +107,9 @@
        </MglMarker>
        </MglMap>
       </v-card>
+          </v-col>
+          </v-row>
+      </v-container>
       <kenyanCases></kenyanCases>
     </v-content>
     <Footer></Footer>
