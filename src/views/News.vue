@@ -1,6 +1,5 @@
 <template>
   <div id='News'>
-    <Header></Header>
     <v-container fill-height>
       <v-row align='center' justify='center'>
         <v-col>

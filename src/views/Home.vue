@@ -1,6 +1,5 @@
 <template>
   <div id='home'>
-    <Header></Header>
     <v-content>
       <v-container>
         <v-row>

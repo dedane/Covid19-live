@@ -73,16 +73,8 @@
        <v-btn class='text-center mx-4'
       @click="$router.push('/Maps')"
       text
-      color='#9A2222'>
-        Maps
-      </v-btn>
-      </v-list-item>
-      <v-list-item>
-      <v-btn class='text-center mx-4'
-      text
-      @click="$router.push('/About')"
       color='#FFFFFF'>
-      About
+        Maps
       </v-btn>
       </v-list-item>
                   </v-layout>
