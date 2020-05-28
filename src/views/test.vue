@@ -1,6 +1,5 @@
 <template>
   <div id='test'>
-    <Header></Header>
     <v-container fill-height>
       <v-stepper v-model='el'>
        <v-stepper-header>

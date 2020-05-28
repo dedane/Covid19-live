@@ -1,6 +1,5 @@
 <template>
 <div id='maps'>
-  <Header></Header>
   <v-container fill-height>
     <v-row>
       <v-col>

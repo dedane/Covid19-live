@@ -1,6 +1,5 @@
 <template>
 <div id='About'>
-  <Header></Header>
   <Footer></Footer>
 </div>
 </template>
