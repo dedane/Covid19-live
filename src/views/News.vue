@@ -18,13 +18,11 @@
 
 <script>
 import newsContent from '@/components/newsContent.vue';
-import Header from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
 import axios from 'axios';
 
 export default {
   components: {
-    Header,
     Footer,
     newsContent,
   },
