@@ -1,6 +1,8 @@
 <template>
   <div id='test'>
-    <v-container fill-height>
+    <v-container fluid>
+      <!-- <v-col hidden-sm-and-down>
+      </v-col> -->
       <v-stepper v-model='el'>
        <v-stepper-header>
         <v-stepper-step :complete="el > 1" step="1">1 of 10</v-stepper-step>
@@ -56,7 +58,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 2">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 2">
               No
             </v-btn>
          </v-stepper-content>
@@ -91,7 +93,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 3">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 3">
               No
             </v-btn>
          </v-stepper-content>
@@ -126,7 +128,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 4">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 4">
               No
             </v-btn>
          </v-stepper-content>
@@ -161,7 +163,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 5">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 5">
               No
             </v-btn>
          </v-stepper-content>
@@ -196,7 +198,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 6">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 6">
               No
             </v-btn>
          </v-stepper-content>
@@ -231,7 +233,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 7">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 7">
               No
             </v-btn>
          </v-stepper-content>
@@ -266,7 +268,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 8">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 8">
               No
             </v-btn>
          </v-stepper-content>
@@ -301,7 +303,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 9">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 9">
               No
             </v-btn>
          </v-stepper-content>
@@ -336,7 +338,7 @@
             <v-btn block dark color='#9a2222' class='mb-6' @click="el = 10">
               Yes
             </v-btn>
-            <v-btn block outlined color='#9a2222'>
+            <v-btn block outlined color='#9a2222' @click="el = 10">
               No
             </v-btn>
          </v-stepper-content>
@@ -377,6 +379,8 @@
          </v-stepper-content>
       </v-stepper-items>
       </v-stepper>
+      <!-- <v-col hide-sm-and-down>
+      </v-col> -->
       </v-container>
     <Footer></Footer>
   </div>

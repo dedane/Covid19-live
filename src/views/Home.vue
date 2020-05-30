@@ -59,9 +59,9 @@
       </v-col>
       <v-row dark class='justify-center align-center'>
         <v-card-title
-        class='text-center display-4'
+        class='text-center display-1'
         color="#9a2222"
-        ma-2>
+        >
         How Covid Spreads
       </v-card-title>
       </v-row>

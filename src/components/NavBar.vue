@@ -33,12 +33,6 @@
       color='#9A2222'>
         Maps
       </v-btn>
-      <v-btn class='text-center mx-4'
-      @click="$router.push('/About')"
-      text
-      color='#9A2222'>
-      About
-      </v-btn>
     </v-col>
   <v-navigation-drawer app v-model='drawer' absolute temporary   class="nav" color='#9A2222 '>
       <v-list>
